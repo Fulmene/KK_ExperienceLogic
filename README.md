@@ -2,7 +2,7 @@
 Change how H experience state is determined in Koikatsu.
 
 ## Feature
-- The "experienced" state now requires only one hole to be broken.
+- The girls "experienced" state now requires breaking only one hole.
 
 ## Requirements
 - Koikatsu
