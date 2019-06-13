@@ -4,7 +4,6 @@ using Harmony;
 
 namespace KK_ExperienceLogic
 {
-    [BepInProcess("Koikatu")]
     [BepInPlugin(GUID, Name, Version)]
     public partial class ExperienceLogic : BaseUnityPlugin
     {
@@ -19,6 +18,8 @@ namespace KK_ExperienceLogic
 
         public ExperienceLogic()
         {
+            if (Application.productName == "CharaStudio") return;
+            
             SingleHole = new ConfigWrapper<bool>("SingleHole", this, true);
 
             var harmony = HarmonyInstance.Create(GUID);
